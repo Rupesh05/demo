@@ -88,7 +88,17 @@
     f1.add(this.properties, 'show').onFinishChange(function(l) {that.toggle();});
     //["hide/show"] = function() {};
     f1.add(this.properties, 'layout').onFinishChange(function(l) {that.doLayout(); that.draw();});
-    //f1.add(this.properties, 'X', 0, this.res[0], 1).listen();
+    
+    
+    // lens 
+    
+    f1.add(this.properties, 'lens';
+           
+           
+           
+           //
+           
+           
     //f1.add(this.properties, 'Y', 0, this.res[1], 1).listen();
     //f1.add(this.properties, 'Z', 0, this.res[2], 1).listen();
     f1.add(this.properties, 'zoom', 0.01, 4.0, 0.1).onFinishChange(function(l) {that.doLayout(); that.draw();});
