@@ -145,7 +145,13 @@ function Volume(props, image, interactive, parentEl) {
 
   this.properties.xmin = this.properties.ymin = this.properties.zmin = 0.0;
   this.properties.xmax = this.properties.ymax = this.properties.zmax = 1.0;
-
+  
+  // lens
+  this.properties.lens = true;
+  
+  
+  
+  
   this.properties.density = 10.0;
   this.properties.saturation = 1.0;
   this.properties.brightness = 0.0;
@@ -206,6 +212,13 @@ Volume.prototype.addGUI = function(gui) {
   if (this.properties.samples % 32 > 0) this.properties.samples -= this.properties.samples % 32;
   f.add(this.properties, 'samples', 32, 1024, 32);
   f.add(this.properties, 'density', 0.0, 50.0, 1.0);
+  
+  //lens
+  
+   f.add(this.properties, 'lens');
+  
+  
+  
   f.add(this.properties, 'brightness', -1.0, 1.0, 0.05);
   f.add(this.properties, 'contrast', 0.0, 2.0, 0.05);
   f.add(this.properties, 'saturation', 0.0, 2.0, 0.05);
