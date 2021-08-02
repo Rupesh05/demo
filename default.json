@@ -77,6 +77,7 @@
   "objects": [
     {
       "name": "volume",
+      "lens": true,
       "samples": 256,
       "isovalue": 0.45,
       "isowalls": true,
